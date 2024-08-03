@@ -6,4 +6,4 @@ if [ -z "$CART_ENDPOINT" -o -z "$DB_HOST" -o -z "${license_key}" ]; then
 fi
 
 
-java -javaagent:newrelic/newrelic.jar -Dnewrelic.config.license_key=${license_key} -Dnewrelic.config.app_name=shipping -jar /app/shipping.jar
+java -javaagent:newrelic/newrelic.jar -Dnewrelic.config.license_key=${license_key} -jar /app/shipping.jar
