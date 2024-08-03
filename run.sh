@@ -5,4 +5,4 @@ if [ -z "$CART_ENDPOINT" -o -z "$DB_HOST" ]; then
   exit 1
 fi
 
-java -javaagent newrelic/newrelic.jar -jar /app/shipping.jar
+java -javaagent:newrelic/newrelic.jar -jar /app/shipping.jar
